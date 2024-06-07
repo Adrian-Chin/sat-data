@@ -40,7 +40,7 @@ public class Main {
         above1000++;
       }
     }
-    System.out.println(above1000 + " got above 1000");
+    System.out.println(above1000 + " got above 1000 \n" + (totalScore.size()-above1000) + " got below 1000");
 
     //max score
     int max=Integer.MIN_VALUE;
