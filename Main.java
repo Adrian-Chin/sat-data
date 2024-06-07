@@ -33,7 +33,7 @@ public class Main {
     }
     System.out.println(sum/totalScore.size() + " is the average score");
 
-    //amt above 1000 scores
+    //amt above/below 1000 scores
     int above1000=0;
     for(int x: totalScore){
       if(x>=1000){
@@ -42,14 +42,19 @@ public class Main {
     }
     System.out.println(above1000 + " got above 1000 \n" + (totalScore.size()-above1000) + " got below 1000");
 
-    //max score
+    //max/min score
     int max=Integer.MIN_VALUE;
+    int min=Integer.MAX_VALUE;
     for(int x: totalScore){
       if (x>max){
         max=x;
       }
+      if (x<min){
+        min=x;
+      }
     }
-    System.out.println(max + " is the highest score");
+    System.out.println(max + " is the highest score\n" + min + " is the lowest score");
   }
+
 
 }
