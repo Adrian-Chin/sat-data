@@ -24,14 +24,32 @@ public class Main {
 
     // make sure all data entered the ArrayList
     //System.out.println(totalScore);
-    System.out.println(totalScore.size());
+    System.out.println(totalScore.size() + " took the test");
 
+    //calculate avg
     double sum=0;
     for(int x: totalScore){
       sum+=x;
     }
-    System.out.println(sum/totalScore.size());
-    
+    System.out.println(sum/totalScore.size() + " is the average score");
+
+    //amt above 1000 scores
+    int above1000=0;
+    for(int x: totalScore){
+      if(x>=1000){
+        above1000++;
+      }
+    }
+    System.out.println(above1000 + " got above 1000");
+
+    //max score
+    int max=Integer.MIN_VALUE;
+    for(int x: totalScore){
+      if (x>max){
+        max=x;
+      }
+    }
+    System.out.println(max + " is the highest score");
   }
 
 }
